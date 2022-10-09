@@ -1,6 +1,7 @@
 package net.luconia.lobbysystem;
 
 import net.luconia.lobbysystem.listener.InteractListener;
+import net.luconia.lobbysystem.listener.InventoryClickListener;
 import net.luconia.lobbysystem.listener.JoinListener;
 import net.luconia.lobbysystem.listener.ProtectListener;
 import org.bukkit.Bukkit;
@@ -17,6 +18,7 @@ public final class Lobbysystem extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
         Bukkit.getPluginManager().registerEvents(new ProtectListener(), this);
+        Bukkit.getPluginManager().registerEvents(new InventoryClickListener(), this);
     }
 
     @Override

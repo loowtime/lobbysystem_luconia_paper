@@ -59,7 +59,7 @@ public class InteractListener implements Listener {
                     }, 5L);
                     Bukkit.getScheduler().runTaskLaterAsynchronously(Lobbysystem.instance, () -> {
                         // Items
-                        inventory.setItem(10, new ItemBuilder(Material.IRON_SWORD).setDisplayname("§eSMP").setLore("§a§oConnect to SMP server").build());
+                        inventory.setItem(10, new ItemBuilder(Material.IRON_SWORD).setDisplayname("§eSMP").setLore("§a§oConnect to SMP server").setLocalizedName("smp").build());
                     }, 10L);
                     p.openInventory(inventory);
                 }
