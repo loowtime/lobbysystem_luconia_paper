@@ -1,0 +1,5 @@
+name: LobbySystem
+version: '${project.version}'
+main: net.luconia.lobbysystem.Lobbysystem
+authors: [ lowtime ]
+description: Luconia LobbySystem ~ .-.
